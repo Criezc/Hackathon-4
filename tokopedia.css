@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-card {
+  position: relative;
+  overflow: hidden;
+  left: 20px;
+  width: calc(100% + 20px);
+  padding: 24px 20px 20px;
+}
+
+.spacer {
+  position: absolute;
+  top: 0px;
+  left: -104px;
+  width: 100px;
+  height: 100%;
+  background: var(--N0, #ffffff);
+  z-index: 3;
+}
+
+.cardWrapper {
+  line-height: 0;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 83.3333%;
+  display: flex;
+  white-space: nowrap;
+}
+
+.card {
+  -moz-box-align: stretch;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: transparent;
+  position: relative;
+  display: inline-flex;
+}
+
+.third {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  position: static;
+  overflow: visible;
+  background-color: #fff;
+}
+
+.cardSubtitle {
+  flex-flow: column nowrap;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  text-align: left;
+  display: flex;
+}
+
+.cardDesc {
+  margin-bottom: 4px;
+  font-size: 0.86rem;
+  color: rgba(49, 53, 59, 0.96);
+  max-width: 100%;
+  max-height: 100%;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow: hidden;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -moz-box-orient: vertical;
+}
+
+.cardPriceDisc {
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -moz-box-align: center;
+  margin-bottom: 4px;
+  color: rgba(49, 53, 59, 0.96);
+  opacity: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: flex-end;
+  line-height: 1.43;
+}
+
+.cardPriceMain {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.cardPriceMain div:nth-child(1) {
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: var(--R100, #ffeaef);
+  font-size: 0.714286rem;
+  font-weight: bold;
+  color: var(--R400, #ff5c84);
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+.shopWrapper > div:last-child {
+  margin-bottom: 1px;
+  width: 100%;
+}
+.label {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  color: var(--N700, rgba(49, 53, 59, 0.54));
+  font-size: 0.85rem;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+
+.label-i {
+  margin-right: 4px;
+}
+.label-i {
+  position: relative;
+  display: flex;
+  flex: 0 0 16px;
+  height: 16px;
+  margin-right: 2px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("https://images.tokopedia.net/img/goldmerchant/pm_activation/badge/Power%20Merchant%20Pro.png");
+}
+
+.locWrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 18px;
+  height: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.locTitle {
+  height: 20px;
+  transition: transform 0.3s ease 0s;
+  transform: translateY(0px);
+}
+
+.footerWrapper {
+  position: relative;
+  margin-top: auto;
+}
+
+.footerSubs {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  background: var(--N75, #e5e7e9);
+}
+
+.footerSubs .progress {
+  background-color: var(--R500, #ef144a);
+  position: absolute;
+  height: 4px;
+  width: 99%;
+  top: 0px;
+  left: 0px;
+  border-radius: 8px;
+}
+
+.footerText {
+  height: 16px;
+  background-color: var(--N0, #ffffff);
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.714286rem;
+  color: rgba(49, 53, 59, 0.68);
+  line-height: 1.4;
+  letter-spacing: normal;
+  margin-bottom: 4px;
+  padding: 3px 0px 2px;
+  position: relative;
+  display: block;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  left: 20px;
+  width: 75%;
+  padding: 24px 20px 20px;
+}
+
+.banner {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(4, 150, 66), rgb(4, 150, 66))
+    repeat scroll 0% 0%;
+  animation: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 normal both running
+    animation-8jxysv;
+  border-radius: 12px;
+  width: calc(24% - 6px);
+}
+
+.banner-img {
+  background-repeat: no-repeat;
+  background-size: 99% 100%;
+  position: relative;
+  text-align: center;
+  width: 65%;
+  height: 100%;
+  margin: 0px;
+  background-color: transparent;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+.css-11w9hf4 > img {
+  margin: 0px auto;
+  max-height: 100%;
+  min-height: 260px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  object-fit: contain;
+}
+
+.carouselWrapper {
+  margin: 0px -8px;
+  position: static;
+}
+
+.carouselWrapperInherit {
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.carouselWrapper > div > div {
+  padding-bottom: 4px;
+}
+
+.carouselWrapper > div > div > :first-child {
+  z-index: 1;
+}
+.carouselWrapper > div > div > div {
+  z-index: 2;
+}
+.cardBody {
+  display: inline-block;
+  width: 100%;
+  padding: 0px 0px;
+  line-height: normal;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.cardHeight {
+  height: 100%;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.cardsBody {
+  min-width: 100%;
+  border-radius: 8px;
+  position: relative;
+  padding: 0px 8px;
+  display: block;
+}
+
+.cardMain {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+  min-width: 50%;
+  cursor: pointer;
+  flex: 1 1 auto;
+  background-color: transparent;
+}
+
+.cardMain > div {
+  height: 100%;
+}
+.cardSubs {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  padding: 0px;
+  border-radius: 9px;
+  flex-direction: column;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+  margin: 0px;
+}
+
+.cardImageWrap {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  position: static;
+  overflow: visible;
+  background-color: var(--N0, #ffffff);
+}
+
+.cardImage {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0px;
+  overflow: hidden;
+  display: block;
+  margin: 0px;
+}
+
+.cardImageMain {
+  background-repeat: no-repeat;
+  background-size: 99% 100%;
+  height: auto;
+  margin: 0px auto;
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.cardImageMain > img.fade.success,
+.cardImageMain > img.fade.default {
+  opacity: 1;
+}
+.cardImageMain > img.fade {
+  opacity: 0;
+}
+.cardImage img,
+.cardImage .fade {
+  border-radius: 8px 8px 0px 0px;
+}
+.cardImageMain > img {
+  display: block;
+}
+.cardImageMain > img {
+  opacity: 1;
+  width: 100%;
+}
+
+.cardTitle {
+  padding: 8px;
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--N0, #ffffff);
+}
